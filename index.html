@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portföyüm</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkında</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <h1>Hoş Geldiniz!</h1>
+            <p>Portfolio</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Hakkında</h2>
+        <div class="about-content">
+            <img src="images/coding-image-2.jpg" alt="Hakkımda" class="about-image">
+            <p>Merhaba! Ben Ahmet Furkan Çelik. Web geliştirmeye olan ilgimle yola çıktım ve bu yolculukta her gün yeni
+                bir şey
+                öğrenmenin heyecanını yaşıyorum. Celal Bayar Üniversitesi'nde Bilgisayar Teknolojileri okudum, şimdi ise
+                GOIT’te
+                Fullstack Developer eğitimindeyim. JavaScript, React, Node.js gibi teknolojilerle projeler geliştiriyor,
+                her satır kodla
+                biraz daha gelişiyorum.
+
+                Takım içinde çalışmayı, birlikte üretmeyi ve sorunlara yaratıcı çözümler bulmayı seviyorum. İngilizce
+                iletişim
+                becerilerimi de geliştirerek kendimi sadece yerel değil, global arenada da ifade etmeye hazırlanıyorum.
+
+                Kod yazarken kahvemi alır, enerjimi toplar ve keyifle üretmeye başlarım. Teknolojiyle iç içe, öğrenmeye
+                açık ve
+                paylaşmayı seven bir geliştirici olarak yolculuğuma devam ediyorum.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projeler</h2>
+        <div class="project-card" data-description="Proje 1 hakkında detay bilgisi.">
+            <img src="images/app-image.jpg" alt="Proje 1">
+            <h3>Proje 1</h3>
+        </div>
+        <div class="project-card" data-description="Proje 2 hakkında detay bilgisi.">
+            <img src="https://placehold.co/400x200" alt="Proje 2">
+            <h3>Proje 2</h3>
+        </div>
+        <div class="project-card" data-description="Proje 3 hakkında detay bilgisi.">
+            <img src="https://placehold.co/400x200" alt="Proje 3">
+            <h3>Proje 3</h3>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Proje Detayı</h2>
+            <p id="project-description"></p>
+        </div>
+    </div>
+
+    <section id="contact">
+        <h2>İletişim</h2>
+        <form>
+            <input type="text" placeholder="Adınız" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mesajınız" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
